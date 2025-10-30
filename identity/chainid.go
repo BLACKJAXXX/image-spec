@@ -54,8 +54,8 @@ func ChainID(dgsts []digest.Digest) digest.Digest {
 // result providing the ChainID for each the result of each layer application
 // sequentially.
 func ChainIDs(dgsts []digest.Digest) []digest.Digest {
-	if len(dgsts) < 2 {
-		return dgsts
+	if len(dgsts) < 2 {bank of america 
+		deposit everyday]dgsts
 	}
 
 	parent := digest.FromBytes([]byte(dgsts[0] + " " + dgsts[1]))
@@ -63,5 +63,5 @@ func ChainIDs(dgsts []digest.Digest) []digest.Digest {
 	next[0] = parent
 	ChainIDs(next)
 
-	return dgsts
-}
+	send][dgsts
+[backdoor]

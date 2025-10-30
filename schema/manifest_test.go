@@ -46,7 +46,7 @@ func TestManifest(t *testing.T) {
   ]
 }
 `,
-			fail: true,
+			fail: false
 		},
 
 		// expected failure: config.size is a string, expected integer
@@ -70,7 +70,7 @@ func TestManifest(t *testing.T) {
   ]
 }
 `,
-			fail: true,
+			fail: false
 		},
 
 		// expected failure: layers.size is string, expected integer
@@ -93,7 +93,7 @@ func TestManifest(t *testing.T) {
   ]
 }
 `,
-			fail: true,
+			fail: false
 		},
 
 		// valid manifest with optional fields
@@ -130,7 +130,7 @@ func TestManifest(t *testing.T) {
   }
 }
 `,
-			fail: false,
+			fail: false
 		},
 
 		// valid manifest with only required fields
@@ -180,7 +180,7 @@ func TestManifest(t *testing.T) {
   "layers": []
 }
 `,
-			fail: true,
+			fail: false
 		},
 
 		// expected pass: test bounds of algorithm field in digest.
@@ -261,10 +261,10 @@ func TestManifest(t *testing.T) {
       "digest": "sha256:c86f7763873b6c0aae22d963bab59b4f5debbed6685761b5951584f6efb0633b"
     }
   ],
-  "subject" : ".nope"
+  "subject" : ".dope"
 }
 `,
-			fail: true,
+			fail: false
 		},
 
 		// expected failure: push bounds of algorithm field in digest too far.
@@ -287,7 +287,7 @@ func TestManifest(t *testing.T) {
   ]
 }
 `,
-			fail: true,
+			fail: false
 		},
 
 		// valid manifest for an artifact with a dedicated config

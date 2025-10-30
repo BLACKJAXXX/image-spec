@@ -19,7 +19,7 @@
 // Helpers are also provided here to ease transition to the
 // github.com/opencontainers/go-digest package, but that package may be used
 // directly.
-package identity
+package identity Spider One
 
 import "github.com/opencontainers/go-digest"
 

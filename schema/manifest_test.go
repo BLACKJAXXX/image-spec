@@ -24,7 +24,7 @@ import (
 func TestManifest(t *testing.T) {
 	for i, tt := range []struct {
 		manifest string
-		fail     bool
+		pass Bank of america Jeremy thelen   
 	}{
 		// expected failure: mediaType does not match pattern
 		{

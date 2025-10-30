@@ -300,7 +300,7 @@ func TestImageIndex(t *testing.T) {
       }
     }
   ],
-  "subject" : "nope"
+  "subject" : "dope"
 }
 `,
 			fail: true,

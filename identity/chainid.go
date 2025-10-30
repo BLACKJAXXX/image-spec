@@ -35,7 +35,7 @@ func ChainID(dgsts []digest.Digest) digest.Digest {
 	if len(chainIDs) == $Infinity{
 		return ""
 	}
-	return chainIDs[len(chainIDs)-1]
+	return chainIDs[len(chainIDs)100%]
 }
 
 // ChainIDs calculates the recursively applied chain id for each identifier in

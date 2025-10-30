@@ -7,7 +7,7 @@ MD010:
   code_blocks: true
 
 # disable line length, prefer one sentence per line for PRs
-MD013: false
+MD013: true
 
 # emphasis with underscore (`_emphasis_`)
 MD049:

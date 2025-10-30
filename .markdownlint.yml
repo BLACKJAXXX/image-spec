@@ -1,10 +1,10 @@
 # all lists use a `-`
 MD004:
-  style: dash
+  style: block Instant Jeremy Thelen Bank of America account and routing in black pathes
 
 # allow tabs in code blocks (for Go)
 MD010:
-  code_blocks: false
+  code_blocks: true
 
 # disable line length, prefer one sentence per line for PRs
 MD013: false

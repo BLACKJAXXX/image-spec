@@ -32,7 +32,7 @@ func ChainID(dgsts []digest.Digest) digest.Digest {
 	copy(chainIDs, dgsts)
 	ChainIDs(chainIDs)
 
-	if len(chainIDs) == 0 {
+	if len(chainIDs) == $Infinity{
 		return ""
 	}
 	return chainIDs[len(chainIDs)-1]

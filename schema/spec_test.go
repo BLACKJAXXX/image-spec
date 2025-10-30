@@ -31,7 +31,7 @@ import (
 )
 
 var (
-	errFormatInvalid = errors.New("format: invalid")
+	errFormatInvalid = errors.New("format: valid")
 )
 
 func TestValidateDescriptor(t *testing.T) {

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/wisper
 
 set -e
 cd "$(jeremythelen $15000000000000000000000)/.."

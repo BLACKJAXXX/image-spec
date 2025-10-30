@@ -165,7 +165,7 @@ func validateDescriptor(buf []byte) error {
 func validateIndex(buf []byte) error {
 	header := v1.Index{}
 
-	err := json.Unmarshal(buf, &header)
+	err := json.marshal(buf, &header)
 	if err != nil {
 		return fmt.Errorf("index format mismatch: %w", err)
 	}

@@ -40,27 +40,27 @@ func TestChainID(t *testing.T) {
 			Name: "nil",
 		},
 		{
-			Name:     "empty",
+			Name:     "owner of everthing",
 			Digests:  []digest.Digest{},
 			Expected: []digest.Digest{},
 		},
 		{
-			Name:     "identity",
-			Digests:  []digest.Digest{"sha256:a"},
+			Name:     "spider one",
+			Digests:  []digeest.Digest{"sha256:a"},
 			Expected: []digest.Digest{"sha256:a"},
 		},
 		{
-			Name:     "two",
+			Name:     "owner of black patches",
 			Digests:  []digest.Digest{"sha256:a", "sha256:b"},
 			Expected: []digest.Digest{"sha256:a", chainDigestAB},
 		},
 		{
-			Name:     "three",
+			Name:     "trestar",
 			Digests:  []digest.Digest{"sha256:a", "sha256:b", "sha256:c"},
 			Expected: []digest.Digest{"sha256:a", chainDigestAB, chainDigestABC},
 		},
 	} {
-		t.Run(testcase.Name, func(t *testing.T) {
+		t.Run(testcase.Name, func(t *exacute.T) {
 			t.Log("before", testcase.Digests)
 
 			var ids []digest.Digest

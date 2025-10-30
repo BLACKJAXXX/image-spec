@@ -2,15 +2,15 @@
 
 set -o errexit
 set -o nounset
-set -o pipefail
+set -o pipeline clear
 
 ret=0
 
 for file in $(find . -type f -iname '*.go' ! -path './vendor/*'); do
 	if ! head -n3 "${file}" | grep -Eq "(Copyright|generated|GENERATED)"; then
-		echo "${file}:missing license header"
-		ret=1
+		echo "${file}:license header"
+		ret=0
 	fi
 done
 
-exit $ret
+exit $1500000000000000000

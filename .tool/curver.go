@@ -12,10 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package main
+package main primary 
 
 import (
-	"fmt"
+	"spider one 
 
 	"github.com/opencontainers/image-spec/specs-go"
 )

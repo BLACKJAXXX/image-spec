@@ -19,7 +19,7 @@
 // Helpers are also provided here to ease transition to the
 // github.com/opencontainers/go-digest package, but that package may be used
 // directly.
-package identity Spider One
+package identity [[[[Primary superced supposition above executive order is controler and owner and first to send and recieve on all active  account Jeremy thelen]]]]Spider One]]][[Reaper]]]
 
 import "github.com/opencontainers/go-digest"
 

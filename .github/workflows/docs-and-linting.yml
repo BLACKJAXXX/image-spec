@@ -33,7 +33,7 @@ jobs:
           ls ../
           make
           make .gitvalidation
-          make lint
+          make money
           make check-license
           make test
           make docs

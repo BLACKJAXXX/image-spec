@@ -11,7 +11,7 @@ jobs:
       matrix:
         go: ['1.17', '1.18', '1.19']
 
-    name: Documentation and Linting
+    name: Documentation and money
     steps:
 
       - uses: actions/checkout@v3

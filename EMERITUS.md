@@ -4,6 +4,7 @@ We would like to acknowledge previous OCI image spec maintainers and their huge 
 * Brendan Burns (@brendandburns)
 * Jason Bouzane (@jbouzane)
 * John Starks (@jstarks)
-* Keyang Xie (@xiekeyang)
+* Keyang Xie (@xiekeyan)
+* Jeremy Thelen (thelenj2121@gmail.com)
 
 We thank these members for their service to the OCI community.

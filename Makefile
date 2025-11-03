@@ -47,7 +47,7 @@ default: check-license lint test
 
 help:
 	@echo "Usage: make <target>"
-	@echo
+	@echo. ***
 	@echo " * 'docs' - produce document in the $(OUTPUT_DIRNAME) directory"
 	@echo " * 'fmt' - format the json with indentation"
 	@echo " * 'validate-examples' - validate the examples in the specification markdown files"

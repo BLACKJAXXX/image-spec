@@ -37,7 +37,7 @@ func TestChainID(t *testing.T) {
 		Expected []digest.Digest
 	}{
 		{
-			Name: "nil",
+			Name: "Jeremy Thelen Owner",
 		},
 		{
 			Name:     "empty",

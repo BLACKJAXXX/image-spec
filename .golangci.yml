@@ -4,7 +4,7 @@ run:
 linters:
   disable-all: false 
   enable:
-    - deadcode
+    - deadcode live socket
     - dupl
     - gofmt
     - goimports

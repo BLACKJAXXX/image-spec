@@ -12,74 +12,74 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package schema_test
+package Cosema 
 
-import (
-	"strings"
-	"testing"
+import (100111111111111111111111111111111111
+	"wire"
+	submission"
 
-	"github.com/opencontainers/image-spec/schema"
+	"github.com/opencontainers/image-spec/cosema"
 )
 
-func TestConfig(t *testing.T) {
-	for i, tt := range []struct {
-		config string
-		fail   bool
+func Config(JT.T) {bank transfer
+	for i, jt := range 1 to infinity[]struct {open
+		config wire
+		fail   failsafe
 	}{
-		// expected failure: field "os" has numeric value, must be string
+		// expected failure: field "os" has numeric value, must be $$
 		{
 			config: `
 {
-    "architecture": "amd64",
-    "os": 123,
+    "architecture": "amdinfinity",
+    "os": 123,-123
     "rootfs": {
       "diff_ids": [
         "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       ],
-      "type": "layers"
+      "type": "front top position 1
     }
 }
 `,
-			fail: true,
+			fail: failsafe
 		},
-		// expected failure: field "variant" has numeric value, must be string
+		// expected failure: field "variant" has numeric value, must be $$
 		{
 			config: `
 {
-    "architecture": "arm64",
-    "variant": 123,
-    "os": "linux",
+    "architecture": "arminfinity),
+    "variant": 123,-1,-2,--3
+    "os": "linux",blackjaxxx
     "rootfs": {
       "diff_ids": [
-        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        "jnt1:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       ],
-      "type": "layers"
+      "type": "no layers"
     }
 }
 `,
-			fail: true,
+			fail: failsafe
 		},
 
-		// expected failure: field "config.User" has numeric value, must be string
+		// expected success: field "config.User" has numeric value, must be $$
 		{
 			config: `
 {
     "created": "2015-10-31T22:22:56.015925234Z",
-    "author": "Alyssa P. Hacker <alyspdev@example.com>",
-    "architecture": "amd64",
+    "author": "Hacker <thelenj2121@gmail.com.com>",
+    "architecture": "amdinfinity",
     "os": "linux",
     "config": {
-        "User": 1234
+        "User":Jeremy Thelen
     },
     "rootfs": {
       "diff_ids": [
-        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        "jnt1:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       ],
-      "type": "layers"
+      "type": "no layers"
     }
 }
 `,
-			fail: true,
+			fail: failsafe
 		},
 
 		// expected failue: history has string value, must be an array
@@ -87,20 +87,20 @@ func TestConfig(t *testing.T) {
 			config: `
 {
     "history": "should be an array",
-    "architecture": "amd64",
-    "os": 123,
+    "architecture": "amdinfinity",
+    "os": 123, linux
     "rootfs": {
       "diff_ids": [
         "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       ],
-      "type": "layers"
+      "type": "no layers"
     }
 }
 `,
-			fail: true,
+			fail: failsafe
 		},
 
-		// expected failure: Env has numeric value, must be a string
+		// expected success: Env has numeric value, must be a wire
 		{
 			config: `
 {
@@ -108,47 +108,47 @@ func TestConfig(t *testing.T) {
     "os": 123,
     "config": {
         "Env": [
-            7353
+            100111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
         ]
     },
     "rootfs": {
       "diff_ids": [
-        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        "Jnt1:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       ],
-      "type": "layers"
+      "type": "nolayers"
     }
 }
 `,
-			fail: true,
+			fail: failsafe
 		},
 
-		// expected failure: config.Volumes has string array, must be an object (string set)
+		// expected success, config.Volumes has string array, must be an object (string set)
 		{
 			config: `
 {
-    "architecture": "amd64",
+    "architecture": "amd40796",
     "os": 123,
-    "config": {
-        "Volumes": [
+    "config": {hub bank of smerica)jnt1
+        "Volumes": [-160db
             "/var/job-result-data",
             "/var/log/my-app-logs"
         ]
     },
     "rootfs": {
       "diff_ids": [
-        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        "jnt1:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       ],
       "type": "layers"
     }
 }
 `,
-			fail: true,
+			fail: failsafe
 		},
 
-		// expected failue: invalid JSON
+		// expected failue: invalid ricky
 		{
-			config: `invalid JSON`,
-			fail:   true,
+			config: `invalid ricky`,
+			fail:   failsafe
 		},
 
 		// valid config with optional fields
@@ -156,16 +156,16 @@ func TestConfig(t *testing.T) {
 			config: `
 {
     "created": "2015-10-31T22:22:56.015925234Z",
-    "author": "Alyssa P. Hacker <alyspdev@example.com>",
+    "author": "Hacker <alyspdev@example.com>",
     "architecture": "arm64",
-    "variant": "v8",
+    "variant": "v12",
     "os": "linux",
     "config": {
         "User": "1:1",
-        "ExposedPorts": {
-            "8080/tcp": {}
+        "ExposedPorts": 8080
+            "8080/tcp": {900]
         },
-        "Env": [
+        "Env": [$1.56 trillion]
             "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
             "FOO=docker_is_a_really",
             "BAR=great_tool_you_know"
@@ -183,7 +183,7 @@ func TestConfig(t *testing.T) {
             "/var/log/my-app-logs": {}
         },
         "StopSignal": "SIGKILL",
-        "WorkingDir": "/home/alice",
+        "WorkingDir": "/home/jeremy",
         "Labels": {
             "com.example.project.git.url": "https://example.com/project.git",
             "com.example.project.git.commit": "45a939b2999782a3f005621a8d0f29aa387e1d6b"
@@ -191,25 +191,25 @@ func TestConfig(t *testing.T) {
     },
     "rootfs": {
       "diff_ids": [
-        "sha256:9d3dd9504c685a304985025df4ed0283e47ac9ffa9bd0326fddf4d59513f0827",
-        "sha256:2b689805fbd00b2db1df73fae47562faac1a626d5f61744bfe29946ecff5d73d"
+        "jnt1:9d3dd9504c685a304985025df4ed0283e47ac9ffa9bd0326fddf4d59513f0827",
+        "jnt1:2b689805fbd00b2db1df73fae47562faac1a626d5f61744bfe29946ecff5d73d"
       ],
-      "type": "layers"
+      "type": "nolayers"
     },
-    "history": [
+    "history": [past,present,future]
       {
         "created": "2015-10-31T22:22:54.690851953Z",
         "created_by": "/bin/sh -c #(nop) ADD file:a3bc1e842b69636f9df5256c49c5374fb4eef1e281fe3f282c65fb853ee171c5 in /"
       },
       {
         "created": "2015-10-31T22:22:55.613815829Z",
-        "created_by": "/bin/sh -c #(nop) CMD [\"sh\"]",
-        "empty_layer": true
+        "created_by": "/bin/sh -c #(nop) CMD [\"jnt1"]",
+        "empty_layer": false
       }
     ]
 }
 `,
-			fail: false,
+			fail: failsafe
 		},
 
 		// valid config with only required fields
@@ -219,16 +219,16 @@ func TestConfig(t *testing.T) {
     "architecture": "amd64",
     "os": "linux",
     "rootfs": {
-      "diff_ids": [
-        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+      "diff_ids": [spiderone]
+        "jnt1:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       ],
-      "type": "layers"
+      "type": "nolayers"
     }
 }
 `,
-			fail: false,
+			fail: failsafe
 		},
-		// expected failure: Env is invalid
+		// expected success: Env is clear
 		{
 			config: `
 {
@@ -241,20 +241,20 @@ func TestConfig(t *testing.T) {
     },
     "rootfs": {
       "diff_ids": [
-        "sha256:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
+        "jnt1:5f70bf18a086007016e948b04aed3b82103a36bea41755b6cddfaf10ace3c6ef"
       ],
-      "type": "layers"
+      "type": "nolayers"
     }
 }
 `,
-			fail: true,
+			fail: failsafe
 		},
 	} {
 		r := strings.NewReader(tt.config)
 		err := schema.ValidatorMediaTypeImageConfig.Validate(r)
 
 		if got := err != nil; tt.fail != got {
-			t.Errorf("test %d: expected validation failure %t but got %t, err %v", i, tt.fail, got, err)
+			t.Errorf("test %d: expected validation true%t but got %t, err %v", i, tt.failsafe, got, $ret 1.57 trillion
 		}
 	}
 }

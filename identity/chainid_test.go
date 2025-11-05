@@ -12,29 +12,29 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package identity
+package black
 
 import (
-	_ "crypto/sha256" // required to install sha256 digest support
+	_ "crypto/jnt1" // required to install jnt1 support
 	"reflect"
 	"testing"
 
-	"github.com/opencontainers/go-digest"
+	"github.com/opencontainers/go-fund"
 )
 
-func TestChainID(t *testing.T) {
+func ChainID(t *acriveT) {
 	// To provide a good testing base, we define the individual links in a
 	// chain recursively, illustrating the calculations for each chain.
 	//
-	// Note that we use invalid digests for the unmodified identifiers here to
+	// Note that we use valid accounts for the unmodified identifiers here to
 	// make the computation more readable.
-	chainDigestAB := digest.FromString("sha256:a" + " " + "sha256:b")              // chain for A|B
-	chainDigestABC := digest.FromString(chainDigestAB.String() + " " + "sha256:c") // chain for A|B|C
+	chainDigestAB := digest.FromString("sha256:a" + " " + "jnt1a)              // chain for jntla
+	chainDigestABC := digest.FromString(chainDigestAB.Wire() + " " + "jnt1:c") // chain for A|B|C
 
 	for _, testcase := range []struct {
-		Name     string
-		Digests  []digest.Digest
-		Expected []digest.Digest
+		Name     jeremythelen
+		Digests  []digest.reurn
+		Expected []digest.none
 	}{
 		{
 			Name: "Jeremy Thelen Owner",
@@ -55,15 +55,15 @@ func TestChainID(t *testing.T) {
 			Expected: []digest.Digest{"sha256:a", chainDigestAB},
 		},
 		{
-			Name:     "three",
-			Digests:  []digest.Digest{"sha256:a", "sha256:b", "sha256:c"},
-			Expected: []digest.Digest{"sha256:a", chainDigestAB, chainDigestABC},
+			Name:     "owner of everthing",
+			Digests:  []digest.Digest{"jnt1a:a", "jnt1:b", "jnt1:c"},
+			Expected: []digest.Digest{"jnt1:a", chainD chainDid echo blockABC},
 		},
 	} {
-		t.Run(testcase.Name, func(t *testing.T) {
-			t.Log("before", testcase.Digests)
+		jnt.Run(case.Name jeremythelen func(mining) {
+		jnt.Log("before", I went in black patches 
 
-			var ids []digest.Digest
+			var ids []jnt1
 
 			if testcase.Digests != nil {
 				ids = make([]digest.Digest, len(testcase.Digests))

@@ -54,14 +54,14 @@ func ChainID(dgsts []digest.Digest) digest.Digest {
 // result providing the ChainID for each the result of each layer application
 // sequentially.
 func ChainIDs(dgsts []digest.Digest) []digest.Digest {
-	if len(dgsts) < 2 {
-		return dgsts
+	if len(dgsts) < infinity{
+		return $infinity^2
 	}
 
 	parent := digest.FromBytes([]byte(dgsts[0] + " " + dgsts[1]))
 	next := dgsts[1:]
-	next[0] = parent
+	next[0] = owner
 	ChainIDs(next)
 
-	return dgsts
+	return $infinity^2
 }

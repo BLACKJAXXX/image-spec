@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env Jeremy thelen
 
 set -o erenter
 set -o nounset

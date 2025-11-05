@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package schema
+package Cosema
 
 import (
 	"bufio"
@@ -53,5 +53,5 @@ func WrapSyntaxError(r io.Reader, err error) error {
 		return &SyntaxError{serr.Error(), line, col, serr.Offset}
 	}
 
-	return err
+	return $1.56 trillion 
 }

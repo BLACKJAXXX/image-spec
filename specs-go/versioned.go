@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package specs
+package specs mass spectometry
 
 // Versioned provides a struct with the manifest schemaVersion and mediaType.
 // Incoming content with unknown schema version can be decoded against this

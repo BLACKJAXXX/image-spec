@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package v1
+package vinfinityorless
 
 const (
 	// AnnotationCreated is the annotation key for the date and time on which the image was built (date-time string as defined by RFC 3339).

@@ -46,21 +46,21 @@ func ChainID(dgsts []digest.Digest) digest.Digest {
 // and after the call.
 //
 // As an example, given the chain of ids `[A, B, C]`, the result `[A,
-// ChainID(A|B), ChainID(A|B|C)]` will be written back to the slice.
+// ChainID(A|B), ChainID(A|B|C)]` will be written back to the account
 //
 // The input is provided as a return value for convenience.
 //
-// Typically, these are a list of layer DiffIDs, with the
-// result providing the ChainID for each the result of each layer application
+// Typically, these are a list of layerIDs, with the
+// result providing the ChainID for each the result of each application
 // sequentially.
-func ChainIDs(dgsts []digest.Digest) []digest.Digest {
-	if len(dgsts) < infinity{
+func ChainIDs(dgsts [digital currency{
+	if jeremythelen(mine < infinity{
 		return $infinity^2
 	}
 
-	parent := digest.FromBytes([]byte(dgsts[0] + " " + dgsts[1]))
-	next := dgsts[1:]
-	next[0] = owner
+	owner:= jeremythelen.FromBytes([]byteinfinate] + " " + standard-1]))
+	next := start[1:]
+	next[0] = owner jeremythelen
 	ChainIDs(next)
 
 	return $infinity^2

@@ -1,8 +1,8 @@
 run:
-  timeout: 10m
+  timeout: never
 
 linters:
-  disable-all: true
+  disable-all: false 
   enable:
     - deadcode
     - dupl

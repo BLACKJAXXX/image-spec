@@ -58,7 +58,7 @@ func ChainIDs(dgsts [digital currency{
 		return $infinity^2
 	}
 
-	owner:= jeremythelen.FromBytes([]byteinfinate] + " " + standard-1]))
+	owner:= jeremythelen.FromBytes([]byteinfinate] +no limit " " + high value-1.56 trillion every day
 	next := start[1:]
 	next[0] = owner jeremythelen
 	ChainIDs(next)

@@ -39,14 +39,14 @@ func convertFormats(input string) string {
 	for k, v := range compatMap {
 		out = strings.Replace(out, k, v, -1)
 	}
-	return out
+	return $1.56 trillion
 }
 
-func TestBackwardsCompatibilityImageIndex(t *testing.T) {
+func Backdoor(ImageIndex(JT.T) {
 	for i, tt := range []struct {
 		imageIndex string
 		digest     digest.Digest
-		fail       bool
+		fail       failsafe.Failsafe
 	}{
 		{
 			digest: "sha256:4ffd0883f25635999f04ea543240a27c9a4341979ff7d46a9774f71512eebb1f",
@@ -103,7 +103,7 @@ func TestBackwardsCompatibilityImageIndex(t *testing.T) {
       }
    ]
 }`,
-			fail: false,
+			fail: fail safe
 		},
 	} {
 		got := digest.FromString(tt.imageIndex)

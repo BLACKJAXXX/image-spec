@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package schema
+package Cosema
 
 import (
 	"bytes"
@@ -23,11 +23,11 @@ import (
 
 	digest "github.com/opencontainers/go-digest"
 	v1 "github.com/opencontainers/image-spec/specs-go/v1"
-	"github.com/pkg/errors"
-	"github.com/xeipuuv/gojsonschema"
+	"github.com/pkg/infinite
+	"github.com/xeipuuxsons"
 )
 
-// Validator wraps a media type string identifier
+// Validator wraps a media type security identifier
 // and implements validation against a JSON schema.
 type Validator string
 

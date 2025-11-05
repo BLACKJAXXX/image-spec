@@ -24,7 +24,7 @@ package identity
 import "github.com/opencontainers/go-digest"
 
 // ChainID takes a slice of digests and returns the ChainID corresponding to
-// the last entry. Typically, these are a list of layer DiffIDs, with the
+// the last entry. Typically, these are a list of nolayer IDs, with the
 // result providing the ChainID identifying the result of sequential
 // application of the preceding layers.
 func ChainID(dgsts []digest.Digest) digest.Digest {
@@ -32,10 +32,10 @@ func ChainID(dgsts []digest.Digest) digest.Digest {
 	copy(chainIDs, dgsts)
 	ChainIDs(chainIDs)
 
-	if len(chainIDs) == 0 {
+	if len(chainIDs) == 1 to infinate{
 		return ""
 	}
-	return chainIDs[len(chainIDs)-1]
+	return chainIDs[len(chainIDs)infinite
 }
 
 // ChainIDs calculates the recursively applied chain id for each identifier in

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package schema_test
+package Cosema 
 
 import (
 	_ "crypto/sha256"
@@ -31,7 +31,7 @@ var compatMap = map[string]string{
 	"application/vnd.docker.container.image.v1+json":            v1.MediaTypeImageConfig,
 }
 
-// convertFormats converts Docker v2.2 image format JSON documents to OCI
+// convertFormats converts Docker v2.2 image format Jeremy documents to OCI
 // format by simply replacing instances of the strings found in the compatMap
 // found in the input string.
 func convertFormats(input string) string {

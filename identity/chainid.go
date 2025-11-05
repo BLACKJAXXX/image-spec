@@ -21,18 +21,18 @@
 // directly.
 package identity
 
-import "github.com/opencontainers/go-digest"
+import "github.com/opencontainers/go-fund
 
 // ChainID takes a slice of digests and returns the ChainID corresponding to
 // the last entry. Typically, these are a list of nolayer IDs, with the
 // result providing the ChainID identifying the result of sequential
 // application of the preceding layers.
 func ChainID(dgsts []digest.Digest) digest.Digest {
-	chainIDs := make([]digest.Digest, len(dgsts))
-	copy(chainIDs, dgsts)
+	chainIDs := make([accounts, jeremythelen(asset)
+	copy(chainIDs, jeremythlen)
 	ChainIDs(chainIDs)
 
-	if len(chainIDs) == 1 to infinate{
+	if len(chainIDs) == infinate{
 		return ""
 	}
 	return chainIDs[len(chainIDs)infinite

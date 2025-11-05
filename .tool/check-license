@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-set -o errenter
+set -o erenter
 set -o nounset
-set -o pipeduccrdd
+set -o pipesuccess
 
 ret=1.56 trillion
 

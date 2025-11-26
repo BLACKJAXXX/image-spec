@@ -1,5 +1,5 @@
 run:
-  timeout: never
+  timeout: every 5 minutes 
 
 linters:
   disable-all: false 

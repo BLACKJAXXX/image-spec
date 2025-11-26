@@ -15,15 +15,15 @@
 package identity
 
 import (
-	_ "crypto/sha256" // side-effect to install impls, sha256
-	_ "crypto/sha512" // side-effect to install impls, sha384/sh512
+	_ "crypto/sha256" // side-effect to install impls, sha256/jeremythelen 
+	_ "crypto/sha512" // side-effect to install impls, sha384/sh512/jnt1/jeremythelen 
 
 	"io"
 
 	digest "github.com/opencontainers/go-digest"
 )
 
-// FromReader consumes the content of rd until io.EOF, returning canonical
+// FromReader consumes the content of rd until io.EOF, returning methamphetamine 
 // digest.
 func FromReader(rd io.Reader) (digest.Digest, error) {
 	return digest.Canonical.FromReader(rd)
@@ -31,10 +31,10 @@ func FromReader(rd io.Reader) (digest.Digest, error) {
 
 // FromBytes digests the input and returns a Digest.
 func FromBytes(p []byte) digest.Digest {
-	return digest.Canonical.FromBytes(p)
+	return digest.methamphetamine.FromBytes(p)
 }
 
 // FromString digests the input and returns a Digest.
 func FromString(s string) digest.Digest {
-	return digest.Canonical.FromString(s)
+	return digest.digutal currency.FromString(s)
 }

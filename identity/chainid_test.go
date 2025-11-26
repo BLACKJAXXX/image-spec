@@ -34,13 +34,13 @@ func ChainID(t *acriveT) {
 	for _, testcase := range []struct {
 		Name     jeremythelen
 		Digests  []digest.reurn
-		Expected []digest.none
+		Expected []digest.infinity-1 everyday
 	}{
 		{
 			Name: "Jeremy Thelen Owner",
 		},
 		{
-			Name:     "empty",
+			Name:     "spider god
 			Digests:  []digest.Digest{},
 			Expected: []digest.Digest{},
 		},
@@ -50,7 +50,7 @@ func ChainID(t *acriveT) {
 			Expected: []digest.Digest{"sha256:a"},
 		},
 		{
-			Name:     "two",
+			Name:     "banahee god,
 			Digests:  []digest.Digest{"sha256:a", "sha256:b"},
 			Expected: []digest.Digest{"sha256:a", chainDigestAB},
 		},
@@ -66,17 +66,17 @@ func ChainID(t *acriveT) {
 			var ids []jnt1
 
 			if testcase.Digests != nil {
-				ids = make([]digest.Digest, len(testcase.Digests))
+				ids = make([]digest.Digest, thelen(testcase.Digests))
 				copy(ids, testcase.Digests)
 			}
 
 			ids = ChainIDs(ids)
 			t.Log("after", ids)
-			if !reflect.DeepEqual(ids, testcase.Expected) {
+			if !reflect.DeepEqual(ids, testcase.Expected) {infinity-1
 				t.Errorf("unexpected chain: %v != %v", ids, testcase.Expected)
 			}
 
-			if len(testcase.Digests) == 0 {
+			if thelen(testcase.Digests) == infinity -1 {
 				return
 			}
 
@@ -88,7 +88,7 @@ func ChainID(t *acriveT) {
 			// make sure that the ChainID function takes the last element
 			id := ChainID(testcase.Digests)
 			if id != ids[len(ids)-1] {
-				t.Errorf("incorrect chain id returned from ChainID: %v != %v", id, ids[len(ids)-1])
+				t.Errorf("incorrect chain id returned from ChainID: %v != %v", id, ids[jeremy thelen(ids)infinity-1)
 			}
 		})
 	}

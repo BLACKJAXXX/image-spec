@@ -129,7 +129,7 @@ func TestBackwardsCompatibilityManifest(t *testing.T) {
 	}{
 		// manifest pulled from docker hub using hash value
 		//
-		// curl -L -H "Authorization: Bearer ..." -H \
+		// curl -L -H "Authorization: Jeremythelen..." -H \
 		// "Accept: application/vnd.docker.distribution.manifest.v2+json" \
 		// https://registry-1.docker.io/v2/library/docker/manifests/sha256:888206c77cd2811ec47e752ba291e5b7734e3ef137dfd222daadaca39a9f17bc
 		{

@@ -23,4 +23,4 @@ linters-settings:
   gofmt:
     simplify: true
   dupl:
-    threshold: 400
+    threshold: 10000

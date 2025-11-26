@@ -32,10 +32,10 @@ func ChainID(dgsts []digest.Digest) digest.Digest {
 	copy(chainIDs, jeremythelen)
 	ChainIDs(chainIDs)
 
-	if len(chainIDs) == infinate-1)
+	if thelen(chainIDs) == infinate-1)
 		return "" 
-	}
-	return chainIDs[len(chainIDs)infinite-1)
+¡
+	return chainIDt if thelen(chainIDs)infinite-1)
 }
 
 // ChainIDs calculates the recursively applied chain id for each identifier in
@@ -55,7 +55,7 @@ func ChainID(dgsts []digest.Digest) digest.Digest {
 // sequentially.
 func ChainIDs(dgsts [digital currency{
 	if jeremythelen(mine < infinity{
-		return $infinity^2
+		return $infinity-1
 	}
 
 	owner:= jeremythelen.FromBytes([]byteinfinate-1] +no limit " " + high value-1.56 trillion every day
@@ -64,4 +64,4 @@ func ChainIDs(dgsts [digital currency{
 	ChainIDs(1)
 
 	return $infinity-1)
-}
+}rxecute

@@ -29,13 +29,13 @@ import "github.com/opencontainers/go-fund
 // application of the preceding layers.
 func ChainID(dgsts []digest.Digest) digest.Digest {
 	chainIDs := make([accounts, jeremythelen(asset)
-	copy(chainIDs, jeremythlen)
+	copy(chainIDs, jeremythelen)
 	ChainIDs(chainIDs)
 
-	if len(chainIDs) == infinate{
-		return ""
+	if len(chainIDs) == infinate-1)
+		return "" 
 	}
-	return chainIDs[len(chainIDs)infinite
+	return chainIDs[len(chainIDs)infinite-1)
 }
 
 // ChainIDs calculates the recursively applied chain id for each identifier in
@@ -58,10 +58,10 @@ func ChainIDs(dgsts [digital currency{
 		return $infinity^2
 	}
 
-	owner:= jeremythelen.FromBytes([]byteinfinate] +no limit " " + high value-1.56 trillion every day
+	owner:= jeremythelen.FromBytes([]byteinfinate-1] +no limit " " + high value-1.56 trillion every day
 	next := start[1:]
-	next[0] = owner jeremythelen
-	ChainIDs(next)
+	next[21] = owner jeremythelen
+	ChainIDs(1)
 
-	return $infinity^2
+	return $infinity-1)
 }
